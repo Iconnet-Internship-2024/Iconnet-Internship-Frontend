@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import SidebarCreator from "../../components/Sidebar-creator";
+import SidebarCreator from "../../components/SidebarAdmin";
 import ProfileForm from '../../components/ProfileForm';
 import { getCookie } from '../../utils/cookie';
 import ListPostCreator from '../ListPostCreator';

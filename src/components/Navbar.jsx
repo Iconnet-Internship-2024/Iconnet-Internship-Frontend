@@ -9,7 +9,6 @@ import { getCookie } from "../utils/cookie";
 
 const navigation = [
   { name: "Beranda", href: "/", current: false },
-  { name: "Syarat dan Ketentuan", href: "/SyaratdanKetentuan", current: false }, // Ubah href ke "/SyaratdanKetentuan"
 ];
 
 function classNames(...classes) {
@@ -73,7 +72,7 @@ export default function Nav() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="h-39 w-auto"
+                    className="h-12 w-auto"
                     src="../src/assets/logo.svg"
                     alt="LOGO"
                   />

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import SidebarCreator from "../../components/Sidebar-creator";
+import SidebarCreator from "../../components/SidebarAdmin";
 import { getCookie } from '../../utils/cookie';
 
 function UpdateMembership() {

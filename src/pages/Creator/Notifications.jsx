@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import SidebarCreator from "../../components/Sidebar-creator";
+import SidebarCreator from "../../components/SidebarAdmin";
 import { FaBell } from "react-icons/fa";
 import { Card, Modal } from "flowbite-react"; // asumsikan ada komponen Modal dari flowbite-react
 

@@ -1,5 +1,5 @@
 import React from "react";
-import SidebarCreator from "../../components/Sidebar-creator";
+import SidebarCreator from "../../components/SidebarAdmin";
 
 function SettingsCreator() {
   return (

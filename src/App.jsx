@@ -18,16 +18,15 @@ import Membership from "./pages/Creator/Membership";
 import ListMembership from "./pages/Creator/ListMembership";
 import UpdateMembership from './pages/Creator/UpdateMembership'; 
 import UpdatePassword from "./pages/updatepassword";
-import Dashboard from "./pages/dashboard";
-import Questions from "./pages/admin/questions";
-import Reports from "./pages/admin/reports";
+import Dashboard from "./pages/admin/dashboard";
+import Pengajuan from "./pages/admin/pengajuan";
 import Result from "./pages/result";
 import Resultcategory from "./pages/resultcategory";
 import ListPostCreator from "./pages/ListPostCreator.jsx";
 import ListPostUser from "./pages/ListPostUser.jsx";
 import EditPost from "./components/EditPost.jsx";
-import SyaratdanKetentuan from "./pages/SyaratdanKetentuan";
-import Magang from "./pages/magang"; // Import halaman Magang
+import RiwayatLog from "./pages/admin/riwayatLog.jsx";
+import DetailPengajuan from "./pages/admin/detailPengajuan";
 
 function App() {
   const [showHeaderFooter, setShowHeaderFooter] = useState(true);
@@ -70,12 +69,11 @@ function App() {
               element={<Settings setShowHeaderFooter={() => setShowHeaderFooter(false)} />}
             />
             <Route
-              path="/questions"
-              element={<Questions setShowHeaderFooter={() => setShowHeaderFooter(false)} />}
+              path="/pengajuan"
+              element={<Pengajuan setShowHeaderFooter={() => setShowHeaderFooter(false)} />}
             />
             <Route
-              path="/reports"
-              element={<Reports setShowHeaderFooter={() => setShowHeaderFooter(false)} />}
+              path="/riwayat-log" element={<RiwayatLog />}
             />
             <Route path="/postCreator" element={<ListPostCreator />} />
             <Route path="/postUser" element={<ListPostUser />} />
@@ -87,12 +85,8 @@ function App() {
             <Route path="/ListMembership" element={<ListMembership />} />
             <Route path="/tier/update/:id" element={<UpdateMembership />} />
             <Route path="/Notifications" element={<Notifications />} />
-
-            {/* Tambahkan route untuk SyaratdanKetentuan */}
-            <Route path="/SyaratdanKetentuan" element={<SyaratdanKetentuan />} />
-
-            {/* Tambahkan route untuk Magang */}
-            <Route path="/magang" element={<Magang />} />
+            <Route path="/detailPengajuan/:id" element={<DetailPengajuan />} />
+            
           </Routes>
         </div>
         {showHeaderFooter && <Footer />}

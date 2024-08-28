@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import moment from "moment";
-import SidebarCreator from "../../components/Sidebar-creator";
+import SidebarCreator from "../../components/SidebarAdmin";
 
 function Audience() {
   const [audienceData, setAudienceData] = useState([]);
